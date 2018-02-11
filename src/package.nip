@@ -1,0 +1,43 @@
+<?php
+namespace Packages;
+
+require_once('NIML.php');
+
+class NIML extends \NIML {
+
+	public static function updatetemplateCache($templates=NULL){
+		if(is_array($templates)){
+			foreach($templates as $template){
+				\unlink(DPATH_TPL.'niml/'.hash('md4', $template).".php");
+			}
+		}else{
+			return \Storage::clearPath(DPATH_TPL);
+		}
+		return true;
+	}
+
+	public
+	$leftTAG = '{{',
+	$rightTAG = '}}';
+
+	public function getFilenames($template, $is_include = false){
+		if($is_include==false){
+			$this->assign("__host", '//'.HOST);
+			$this->assign("__theme", VIEW_URL.$this->theme."/".AI_CURR."/");
+			$this->assign("__static", SIS_URL."static/");
+		}
+		return [VIEW_PATH.$this->theme."/".AI_CURR."/nimls/".$template, DPATH_TPL.'niml/'.hash('md4', $this->theme."/".AI_CURR."/".$template).".php"];
+	}
+
+	// 自定义方法示例
+	// public function label($label){
+	// 	if(is_numeric($label)){
+	// 		$content = EMC::byId($label);
+	// 	}else{
+	// 		$content = EMC::byLabel($label);
+	// 	}
+	// 	if($content){
+	// 		echo $content->code;
+	// 	}
+	// }
+}

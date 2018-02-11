@@ -1,0 +1,367 @@
+﻿<html>
+{{$length =$pages[`length`]}} {{$pages[`length`]}} {{ABC.DEF.GHI.$pages[`length`]}}{{ABC.$pages.pages[`length`]}}{{ABC.$pages.$pages[`length`]}}{{ABC.$pages[`length`]}}{{ABC.$pages[$index]}}{{ABC.$pages[INDEX]}} {{$abc.pages[`length`]}} {{ABC.DEF.pages.$pages}}
+{{ABC.DEF.pages.$pages.pages}} {{ABC.DEF.$pages}} {{ABC.DEF.$pages.pages.$pages.pages}}
+
+<head>
+    <meta charset="utf-8" />
+    <title>欢迎光临益宠香波官方网站</title>
+    <meta name="description" content="益宠（国际）控股集团有限公司与世界各地宠物领域从业机构积极合作，开展宠物文化交流，致力于科学的养宠文化传播,引导正确的宠物饲养及消费习惯。公司最新引进澳洲著名宠物护理品牌“益宠香波”。该系列有机护理产品秉承的理念是：为了爱和健康，绝不添加强烈的化学成份和人工香料。" />
+    <meta name="keywords" content="益宠宠物香波沐浴露进口宠物香波" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <link href="favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="http://ibk.yangram.com/src/see/see.css" />
+    <link rel="stylesheet" type="text/css" href="{{$__THEME}}css/main.css" />
+    <script src="http://ibk.yangram.com/src/iblock.js" data-debug-mode></script>
+</head>
+
+<body>
+    <in value="'abc'" list="'abc', 'bbc', 'cbc'">Foo</in>
+
+    <var name="$bbc" value="bbc" type="string">
+<in value="$bbc" list="'abc', 'bbc', 'cbc'">Foo</in>
+
+<json name="$arr">
+    ["abc", "bbc", "cbc"]
+</json>
+<in value="$bbc" array="$arr">Foo</in>
+
+<json name="$data">
+    {
+        "arr":["abc", "bbc", "cbc"]
+    }
+    
+</json>
+<in value="'cbc'" array="$data[`arr`]">Foo</in>
+    <link href="http://ibk.yangram.com/src/see/Slider/slide.css" type="text/css" rel="stylesheet">
+    <header>
+        <section class="top-bar">
+            <div class="container">
+                <p>选择益宠 便是真爱!&nbsp;&nbsp;真爱热线：400 0605 806</p>
+                <div class="top-links">
+                    <ol>
+                        <li>
+                            <a href="{{$__DOMAIN}}wap/" title="手机版">手机版</a>
+                        </li>
+                        <li class="line">|</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="top-main container">
+                <h1>
+                    <a href="{{$__DOMAIN}}" title="益宠（国际）控股集团有限公司">
+                        <img src="{{$__THEME}}images/1447922322.png" alt="益宠（国际）控股集团有限公司" style="margin:px 0px 0px px;" title="益宠（国际）控股集团有限公司" />
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="{{$__DOMAIN}}" title="网站首页" class="navdown">网站首页</a>
+                        </li>
+                        <li>
+                            <a href="about/" title="关于益宠">关于益宠</a>
+                        </li>
+                        <li>
+                            <a href="jypmjz/" title="精油泡沫洁足">精油泡沫洁足</a>
+                        </li>
+                        <li>
+                            <a href="nami/" title="亮齿美牙笔">亮齿美牙笔</a>
+                        </li>
+                        <li>
+                            <a href="humao/" title="毛囊激活针">毛囊激活针</a>
+                        </li>
+                        <li>
+                            <a href="news/" title="新闻资讯">新闻资讯</a>
+                        </li>
+                        <li>
+                            <a href="join/" title="招商加盟">招商加盟</a>
+                        </li>
+                        <li>
+                            <a href="contact/" title="联系我们">联系我们</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <ni:php>
+            var_dump($__Clomun); var_dump($__Clomuns); die;
+        </ni:php>
+        <ni:if ($__Clomun="root" || $__Clomun="about" ) && $__Clomuns[0]="root">navdown</ni:if>
+        <ni:if $__Clomuns[0]>navdown</ni:if>
+        <ni:if $__Clomuns[0]="root">navdown</ni:if>
+        <ni:if $__Clomuns[0] eq "root">navdown</ni:if>
+        <ni:if $__Clomuns[0] is "root">navdown</ni:if>
+        <ni:if $__Clomuns[0] ne "root">navdown</ni:if>
+        <ni:if $__Clomuns[0] not "root">navdown</ni:if>
+        <ni:if $__Clomuns[0] ge "root">navdown</ni:if>
+        <ni:if $__Clomuns[0] gt "root">navdown</ni:if>
+        <ni:if $__Clomuns[0] le "root">navdown</ni:if>
+        <ni:if $__Clomuns[0] lt "root">navdown</ni:if>
+        <ni:if $__Clomuns[0]="root" && $__Clomun="root">navdown</ni:if>
+        <ni:if $__Clomuns[0]="root" || $__Clomun[0]="about">navdown</ni:if>
+        <ni:var name="$color">black</ni:var>
+        <ni:var name="$item">$___xl[0]</ni:var>
+        {{$item='1111111111222';}} {{$item="sssssssssss";}} {{$item=1111111111222;}} {{$item=DATETIME;}} {{$item=false;}} {{$item=$___xl[0];}}
+        <ni:let $colour="yellow" />
+        <ni:switch name="$color">
+            <ni:case value="red">
+                <div style="width: 100px; height: 100px; background-color:#F00;">Im Red Block</div>
+                <ni:case value="yellow" />
+                <div style="width: 100px; height: 100px; background-color:#FF0;">Im Yellow Block</div>
+            </ni:case>
+            <ni:case value="green">
+                <div style="width: 100px; height: 100px; background-color:#0F0;">Im Green Block</div>
+            </ni:case>
+            <ni:case value="blue">
+                <div style="width: 100px; height: 100px; background-color:#00F;">Im Blue Block</div>
+            </ni:case>
+            <ni:switch name="$colour">
+                <ni:case value="yellow" />
+                <div style="width: 100px; height: 100px; background-color:#FF0;">Im Yellow Block</div>
+                </ni:case>
+                <ni:case value="green">
+                    <div style="width: 100px; height: 100px; background-color:#0F0;">Im Green Block</div>
+                </ni:case>
+            </ni:switch>
+        </ni:switch>
+
+        <ni:for $i in [3, 8]>
+            <div style="width: 100px; height: 100px; background-color:#0F0;">Im Green Block</div>
+        </ni:for>
+
+        <ni:for $j in [0, 10)>
+            <div style="width: 100px; height: 100px; background-color:#0F0;">Im Green Block</div>
+        </ni:for>
+
+        <ni:loop steps="6" stepvalue="-3">
+            <div style="width: 100px; height: 100px; background-color:#0F0;">Im Green Block</div>
+        </ni:loop>
+
+        <ni:while condition="$Fp_CatEarlContent">
+            <ni:for $i in $hotnews>
+                <div style="width: 100px; height: 100px; background-color:#0F0;">Im Green Block</div>
+            </ni:for>
+        </ni:while>
+
+
+        <ni:var name="$str1">I'm a String.</ni:var>
+        <ni:var name="$str2" value="I'm an other String." />I'm an extra text.
+
+        <ni:var name="$str3" value="I'm the third String.">abc</ni:var>
+
+        <ni:let $str4="I'm the fourth String." />
+
+        <ni:let $num=2 />
+
+        <ni:let $bool=false $null=NULL $array=[123, "abcdrfg", "123", IDEA.PS, adc.asra(123, $E321, "abc"),true] />
+
+        <ni:data name="$data1">
+            { "name": "Steve Jobs", "career" : "CEO", "birthday" : "02/24/1955", "date-of-death" : "10/05/2011", "company" : "Apple" }
+        </ni:data>
+
+        <ni:xl name="$data2">
+            <li value="Bill Gates" />
+            <li type="number" value="60">
+        </ni:xl>
+
+        <div>
+            <ni:each xl="$data1" index="$k" item="$v">
+                <div style="float: left; width: 100px; height: 40px; background-color:#0CC; margin-right:10px;">{{$k}} : {{$v}}</div>
+            </ni:each>
+        </div>
+        <div>
+            <ni:for $key in $data1>
+                {{$key in $data1}}
+                <div style="float: left; width: 100px; height: 40px; background-color:#F60; margin-right:10px;">{{$key}}</div>
+                {{/for}}
+            </ni:for>
+        </div>
+        <div>
+            <ni:for $val of $data1>
+                {{$val of $data1}}
+                <div style="float: left; width: 100px; height: 40px; background-color:#0F6; margin-right:10px;">{{$val}}</div>
+                {{/for}}
+            </ni:for>
+        </div>
+
+        <div>
+            <ni:for $el of [0, "one", "two", 3, true, NULL, $str1]>
+                <div style="float: left; width: 100px; height: 40px; background-color:#06F; margin-right:10px;">{{$el}}</div>
+            </ni:for>
+        </div>
+
+        <div>
+
+            <ni:echo name="abc.def" /> {{abc.def}}
+            <!-- abc::def 常量 -->
+
+            <ni:echo name="abc.$def" /> {{abc.$def}}
+            <!-- abc::$def 静态属性 -->
+
+            <ni:echo name="abc.$def[0]" /> {{abc.$def/0}}
+            <!-- abc::$def[0] 以数组$def的第一个元素的值为属性名的静态属性 -->
+
+            <ni:echo name="abc.def.ghi" /> {{abc.def.ghi}}
+            <!-- abc::def 常量 -->
+
+            <ni:echo name="abc.def.$ghi" /> {{abc.def.$ghi}}
+            <!-- abc::$def 静态属性 -->
+
+            <ni:echo name="abc.def.$ghi[0]" /> {{abc.def.$ghi/0}}
+            <!-- abc::$def[0] 以数组$def的第一个元素的值为属性名的静态属性 -->
+
+            <ni:echo name="$abc.def" /> {{$abc.def}}
+            <!-- $abc->def 以字符串def为键的动态属性 -->
+
+            <ni:echo name="$abc.$def" /> {{$abc.$def}}
+            <!-- $abc->$def 以变量$def的值为属性名的动态属性 -->
+
+            <ni:echo name="$abc[0]" /> {{$abc/0}}
+            <!-- $abc[0] 数组的第一个元素 -->
+
+            <ni:echo name="$abc[0]def" />
+            <!-- Error -->
+
+            <ni:echo name="$abc[def]" /> {{$abc/def}}
+            <!-- $abc["def"] 以字符串def为键的数组元素 -->
+
+            <ni:echo name="$abc[`甲`]" />
+            <!-- $abc["甲"] 以字符串‘甲’为键的数组元素 -->
+
+            <ni:echo name="$abc[`甲`][`乙`][$def]" />
+            <!-- $abc["甲"] 以字符串‘甲’为键的数组元素 -->
+
+            <ni:echo name="$abc[`甲`][`乙`][$def]ghi" />
+            <!-- Error -->
+
+            <ni:echo name="$abc[`甲`][`乙`$def]" />
+            <!-- Error -->
+
+            <ni:echo name="$abc[`甲`].def[`乙`$ghi]" />
+            <!-- Error -->
+
+            <ni:echo name="$abc[`甲`].def[`乙`$ghi]hfjkasdhfiuewqyb" />
+            <!-- Error -->
+
+            <ni:echo name="$abc[$def]" /> {{$abc/$def}}
+            <!-- $abc[$def] 以变量$def的值为键的数组元素 -->
+
+            <ni:echo name="$abc.def.ghi" /> {{$abc.def.ghi}}
+            <!-- $abc->def->ghi -->
+
+            <ni:echo name="$abc.def.$ghi" /> {{$abc.def.$ghi}}
+            <!-- $abc->def->$ghi -->
+
+            <ni:echo name="$abc.def[0]" /> {{$abc.def/0}}
+            <!-- $abc->def[0] 以字符串def为键的动态属性（为一个数组）的第一个元素的值 -->
+
+            <ni:echo name="$abc.$def[0]" /> {{$abc.$def/0}}
+            <!-- $abc->$def[0] 以数组变量$def的第一个元素的值为键的数组元素 -->
+
+            <ni:echo name="$abc.$def.ghi" /> {{$abc.$def.ghi}}
+            <!-- $abc->$def->ghi -->
+
+            <ni:w $str1 "This is a direct string" $str2 HTTP />
+        </div>
+
+        <ni:for $i in [3, 8]>
+            <div>
+                <div id="for{{$i}}" style="float: left; width: 100px; height: 100px; background-color:#F00; margin-right:10px;">Im Red Block{{$i}}</div>
+                <ni:loop steps="6" stepvalue="-3">
+                    <div id="loop{{$i}}-{{$curr}}" style="float: left; width: 100px; height: 100px; background-color:#0F0; margin-right:10px;">Im Green Block{{$curr}}</div>
+                </ni:loop>
+            </div>
+        </ni:for>
+
+        <ni:for $j in [0, 10)>
+            <div style="float: left; width: 100px; height: 100px; background-color:#00F; color:#FFF; margin-top:10px; margin-right:10px;">Im Blue Block {{$j}}</div>
+        </ni:for>
+
+
+    </section>
+
+    {{$newsxl= System \Models\CMF. SPC.$member1.$member2.$member3.getxl('news', null, System.Models.CMF.SPCLite.PUBLISHED, CMF\SPCLite::PUBTIME_DESC, 0, 3);}}
+    <section class="ic section h720 slider" id="myslide">
+        <div class="ic ov-hide stage width-full hfull ">
+            <div class="troupe">
+                <section class="actor" data-actor-index="0"><img src="{{$__THEME}}images/1448000757.jpg"></section>
+                <section class="actor" data-actor-index="1"><img src="{{$__THEME}}images/1448001213.jpg"></section>
+            </div>
+            <div class="panel bottom-remote center-remote circles"><span class="slider-panel-option" data-actor-index="0"></span><span class="slider-panel-option" data-actor-index="1"></span></div>
+        </div>
+    </section>
+    <footer class="ic section h260 ov-visi">
+        <div class="container">
+            <div class="ic h50"></div>
+            <div class="ic grid-21 ft-12 lh-21 ov-visi">
+                <div class="nm-5">
+                    <ul>
+                        <li class="ic ft-fff ft-16 lh-40">站内导航</li>
+                        <li><a href="about/" title="关于益宠">关于益宠</a></li>
+                        <li><a href="jypmjz/" title="精油泡沫洁足">精油泡沫洁足</a></li>
+                        <li><a href="nami/" title="亮齿美牙笔">亮齿美牙笔</a></li>
+                        <li><a href="humao/" title="毛囊激活针">毛囊激活针</a></li>
+                        <li><a href="news/" title="新闻资讯">新闻资讯</a></li>
+                        <li><a href="join/" title="招商加盟">招商加盟</a></li>
+                    </ul>
+                </div>
+                <div class="nm-5">
+                    <ul>
+                        <li class="ic ft-fff ft-16 lh-40">相关链接</li>
+                        <li><a href="http://www.whsw.cn/" target="_blank">武汉生物工程学院</a></li>
+                        <li><a href="http://jwc.whsw.cn/" target="_blank">教务处</a></li>
+                        <li><a href="http://xgc.whsw.cn/" target="_blank">学工处</a></li>
+                    </ul>
+                </div>
+                <div class="nm-5 ic ov-visi">
+                    <ul class="ic ov-visi">
+                        <li class="ic ft-fff ft-16 lh-40">关注我们 </li>
+                        <li><a href="//weibo.com/u/5549296537" target="_blank">新浪微博</a></li>
+                        <li class="hover-show-rqcode">微信
+                            <span class="show-rqcode" style=""><img src="{{$__THEME}}images/wx.jpg"></span>
+                        </li>
+                        <li class="hover-show-rqcode">易班<span class="show-rqcode" style=""><img src="{{$__THEME}}images/yb.jpg"></span></li>
+                    </ul>
+                </div>
+                <div class="nm-6">
+                    <ul class="ic al-right">
+                        <li class="ic ft-e7 ft-14">Powered By</li>
+                        <li style="text-align:right;"> <i class="ib-power" style="width: 140px; height: 30px;"></i> </li>
+                        <li class="ic blank-10"></li>
+                        <li>版权所有 © 2015-2016</li>
+                        <li>武汉生物工程学院建筑工程学院</li>
+                        <li>地址：湖北省武汉市阳逻经济开发区汉施路1号</li>
+                        <li>邮编：430415 电话：027-89641938</li>
+                        <li>鄂ICP备09018573号</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <def name="$desc" onload="mb_substr" args="$item.dev_tips, 0, 90"></def>
+        <p>{{$desc}}</p>
+        <p>
+            <ni:str value="$item.dev_tips" start="0" length="90"></ni:str>
+        </p>
+        <p>
+            <str value="$item.dev_tips" start="0" length="90"></str>
+        </p>
+        <def name="$content" onload="htmlspecialchars_decode" args="$___CONTENT" /> {{$content}}
+        <ni:decode value="$___CONTENT"></ni:decode>
+        <def name="$newsxl" onload="CMF\SPC::getxl" args="'news', null, CMF\SPCLite::PUBLISHED, CMF\SPCLite::PUBTIME_DESC, 0, 3"></def>
+        {{$newsxl=CMF\SPC:getxl('news', null, CMF\SPCLite::PUBLISHED, CMF\SPCLite::PUBTIME_DESC, 0, 3);}}
+    </footer>
+
+    <script type="text/interblocks">
+
+        include $_/see/Slider/slide.set; var slider = new _.see.Slider('myslide', 'slide');
+
+    </script>
+</body>
+
+</html>
